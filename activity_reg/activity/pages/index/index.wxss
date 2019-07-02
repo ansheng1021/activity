@@ -1,0 +1,58 @@
+#act .act_img{
+  width: 100%;
+  height: 400rpx;
+  background: #e5e5e5;
+}
+#act .act_img .imgs{
+  width: 100%;
+  height: 100%;
+}
+#act .act_table{
+  padding: 0 24rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#act .act_table .act_content{
+  width: 90%;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30rpx;
+}
+#act .act_table .act_content input{
+  height: 60rpx;
+  border: 1rpx solid #e5e5e5;
+  border-radius: 5rpx;
+  padding-left: 20rpx;
+}
+#act .act_table .act_description{
+  width: 90%;
+  height: 300rpx;
+  border: 1rpx solid #e5e5e5;
+  border-radius: 15rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+#act .act_submit{
+  margin: 0 auto;
+  margin-top: 50rpx;
+  width: 90%;
+}
+#act .blank{
+  padding-bottom: 60rpx;
+}
+#act .hidden{
+  display: none;
+}
+#act .choose_address{
+  width: 90%;
+  height: 60rpx;
+  border: 1rpx solid #e5e5e5;
+  border-radius: 15rpx;
+  margin-top: 10rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}

@@ -1,0 +1,52 @@
+<view id="act">
+  <view class='act_img'>
+    <image class='imgs' src='http://oss.cyzone.cn/2014/0507/20140507113713848.jpg'></image>
+  </view>
+  <form bindsubmit="formSubmit">
+    <view class='act_table'>
+      <!-- 活动名称 -->
+      <view class='act_content'>
+        <view class='act_prefix'>活动名称：</view>
+        <input name="act_name" placeholder='请输入活动名称'></input>
+      </view>
+
+      <!-- 开始时间 -->
+      <view class='act_content'>
+        <view class='act_prefix'>开始时间：</view>
+        <picker mode="date" value="{{startTime}}" start="" end="" bindchange="bindStartTimeChange">
+          <input name="act_start_time" placeholder='请选择开始时间' disabled='true' value='{{startTime}}'></input>
+        </picker>
+      </view>
+
+      <!-- 接受时间 -->
+      <view class='act_content'>
+        <view class='act_prefix'>结束时间：</view>
+        <picker mode="date" value="{{endTime}}" start="" end="" bindchange="bindEndTimeChange">
+          <input name="act_end_time" placeholder='请选择结束时间' disabled='true' value='{{endTime}}'></input>
+        </picker>
+      </view>
+
+      <!-- 活动地点 -->
+      <view class='act_content'>
+        <view class='act_prefix'>活动地点：</view>
+      </view>
+      <input class='choose_address' name="act_place" disabled='true' placeholder='请选择活动地点' value='{{addressName}}' bindtap="openmap" data-latitude="{{latitude}}" data-longitude="{{longitude}}"></input>
+      <!-- 活动介绍 -->
+      <view class='act_content'>
+        <view class='act_prefix'>活动介绍：</view>
+      </view>
+      <textarea name="act_description" class='act_description' placeholder='请输入活动介绍'></textarea>
+
+    </view>
+
+    <!-- 经纬度 -->
+    <input name="act_lat" hidden='true' type='hidden' value='{{latitude}}'></input>
+    <input name="act_lng" hidden='true' type='hidden' value='{{longitude}}'></input>
+
+    <!-- 提交表单 -->
+    <view class='act_submit'>
+      <button class="" type="primary" disabled="{{submitStatus}}" form-type="submit">提交</button>
+    </view>
+  </form>
+  <view class='blank'></view>
+</view>
